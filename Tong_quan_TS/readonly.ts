@@ -1,6 +1,6 @@
 // readonly được sử dụng để làm cho một thuộc tính có dạng chỉ đọc trong class, type hoặc interface 
 // nó có thể được truy cập bên ngoài class nhưng giá trị của chúng không thể thay đổi. Vì không thể thay đổi bên ngoài class nên chúng các thuộc tính đó cần được khởi tạo ngay khi khai báo hoặc được khởi tạo bên trong phương thức khởi tạo (constructor) của class
-class Employee {
+class Employeee {
     readonly empCode: number;
     empName: string;
 
@@ -9,7 +9,7 @@ class Employee {
         this.empName = name;
     }
 }
-let emp = new Employee(1,'viet');
+let emp = new Employeee(1,'viet');
 
 // readonly với đối tượng
 /** Việc sử dụng từ khóa readonly không ngụ ý rằng một giá trị là hoàn toàn bất biến (immutable) - không thể thay đổi nội dung bên trong. Nó chỉ có nghĩa là bản thân thuộc tính đó không thể được sửa lại giá trị */
